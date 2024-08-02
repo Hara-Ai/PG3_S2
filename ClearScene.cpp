@@ -24,4 +24,6 @@ void ClearScene::Update()
 void ClearScene::Draw() 
 {
     Novice::DrawBox(0, 0, 1280, 720, 0.0f, WHITE, kFillModeSolid);
+    Novice::DrawSprite(0, 0, clearImage, 1, 1, 0.0f, WHITE);
+    
 }

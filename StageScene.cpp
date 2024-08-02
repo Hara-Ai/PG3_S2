@@ -123,8 +123,10 @@ void StageScene::Update() {
 
 void StageScene::Draw()
 {
+    //背景
+    Novice::DrawBox(0, 0, 1280, 720, 0.0f, BLACK, kFillModeSolid);
     // 弾
-    Novice::DrawEllipse((int)bullet->pos.x,(int)bullet->pos.y, (int)bullet->radius, (int)bullet->radius, 0.0f, BLACK, kFillModeSolid);
+    Novice::DrawEllipse((int)bullet->pos.x,(int)bullet->pos.y, (int)bullet->radius, (int)bullet->radius, 0.0f, BLUE, kFillModeSolid);
     // プレイヤー
     Novice::DrawEllipse((int)player->pos.x, (int)player->pos.y, (int)player->radius, (int)player->radius, 0.0f, WHITE, kFillModeSolid);
     // 敵
