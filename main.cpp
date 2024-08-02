@@ -3,7 +3,7 @@
 #include "InputManager.h"
 #include "StageScene.h"
 
-const char kWindowTitle[] = "GC2B_14_ハラ_アイ";
+const char kWindowTitle[] = "シューティングスター";
 
 // Windowsアプリでのエントリーポイント(main関数)
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
