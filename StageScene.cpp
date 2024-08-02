@@ -40,12 +40,6 @@ void StageScene::Update() {
         Game::GetInstance()->ChangeScene(new ClearScene());
     }
 
-    // シンプルな敵のロジック
-    //if (InputManager::GetInstance()->IsKeyPressed(DIK_SPACE))
-    //{
-    //    enemyCount--;
-    //}
-
     ////
     // プレイヤーの移動処理
     ////

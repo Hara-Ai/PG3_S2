@@ -1,4 +1,5 @@
 #include "ClearScene.h"
+#include "TitleScene.h"
 #include "Novice.h"
 #include "InputManager.h"
 #include "Game.h"
@@ -7,9 +8,16 @@ void ClearScene::Initialize()
 {
 }
 
-void ClearScene::Update() {
-    if (InputManager::GetInstance()->IsKeyPressed(DIK_ESCAPE)) {
+void ClearScene::Update() 
+{
+    if (InputManager::GetInstance()->IsKeyPressed(DIK_ESCAPE)) 
+    {
         Game::GetInstance()->Exit();
+    }
+
+    if (InputManager::GetInstance()->IsKeyPressed(DIK_R))
+    {
+        Game::GetInstance()->ChangeScene(new TitleScene());
     }
 }
 

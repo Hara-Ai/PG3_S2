@@ -13,7 +13,7 @@ void TitleScene::Initialize()
 
 void TitleScene::Update()
 {
-    if (InputManager::GetInstance()->IsKeyPressed(DIK_SPACE))
+    if (InputManager::GetInstance()->IsKeyPressed(DIK_RETURN))
     {
         Game::GetInstance()->ChangeScene(new StageScene());
     }
